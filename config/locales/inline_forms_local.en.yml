@@ -1,0 +1,7 @@
+en:
+  inline_forms:
+    general:
+      application_title: Palabra
+    devise:
+      title_for_devise: Palabra
+      welcome: ''

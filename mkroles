@@ -1,0 +1,6 @@
+rails g inline_forms Role \
+    name:string \
+    description:text \
+    _enabled:yes \
+    _presentation:'#{name}'
+

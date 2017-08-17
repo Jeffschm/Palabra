@@ -1,0 +1,125 @@
+# encoding: utf-8
+
+en:
+  inline_forms.devise.submit.change_password: ok
+  success: "item succesvol aangemaakt."
+  application_name: Palabra
+  login: aanmelden
+
+  hints:
+    messages:
+      presence: moet ingevuld worden.
+      uniqueness: mag slechts 1 keer voorkomen; als u deze fout krijgt staat er al iemand anders ingeschreven onder hetzelfde identiteitsnummer.
+      curacao_id_number: moet bestaan uit 10 cijfers, waarvan de eerste 8 overeenkomen met de geboortedatum in de vorm jjjjmmdd en de laatste twee cijfers een volgnummer zijn (bijvoorbeeld 1965101519).
+  inline_forms:
+    view:
+      close: sluiten
+      add_new: maak een nieuw(e) %{model}
+      undo: ongedaan maken
+      trash: verwijderen
+    devise:
+      send_instructions: stuur instructies
+      sign_up: registreren
+      login_with_email_and_password: inloggen met email en wachtwoord
+      sign_in: aanmelden
+      links:
+        no_unlock_instructions: hebt u de instructies niet ontvangen?
+        sign_up: registreren
+        sign_in: aanmelden
+        forgot_password: wachtwoord vergeten?
+        sign_in_with: aanmelden via %{provider}
+        no_instructions: hebt u de instructies niet ontvangen?
+      signup_with_email_name_and_password: inloggen met email en wachtwoord
+      provide_email_and_we_send_instructions: geef uw email op, dan sturen wij instructies
+
+
+  activerecord:
+    models:
+      role: permissies
+      user: gebruiker
+      goal: educatiegebied
+      source: bron
+      translation: vertaling
+      word: woord
+      wordtype: woordsoort
+
+    attributes:
+      role:
+        name: naam
+        description: beschrijving
+        users: gebruikers
+      user:
+        header_user_inloggegevens: inloggegevens
+        name: naam
+        email: email
+        password: wachtwoord
+        header_user_organisation: organisatie
+        organisation: ''
+        header_user_roles: bevoegdheden
+        roles: ''
+        header_user_stuff: details inloggedrag
+        encrypted_password: wachtwoord (versleuteld)
+        reset_password_token: reset token
+        reset_password_sent_at: reset token datum
+        remember_created_at: remember datum
+        sign_in_count: x ingelogd
+        current_sign_in_at: ingelogd sinds
+        last_sign_in_at: voorlaatste inlog
+        current_sign_in_ip: huidige ip adres
+        last_sign_in_ip: voorlaatste ip adres
+        remember_me: onthouden
+      goal:
+        name: educatiegebied
+        title_nl: nederlands
+        title_en: engels
+        title_es: spaans
+        title_pap: papiamentu
+        comment: opmerking
+        words: woordenlijst
+      wordtype:
+        name: woordsoort
+        title_nl: nederlands
+        title_en: engels
+        title_es: spaans
+        title_pap: papiamentu
+        comment: opmerking
+        words: woordenlijst
+      source:
+        name: bron
+        comment: opmerking
+        words: woordenlijst
+      word:
+        header_woord: woord
+        name: woord
+        wordtype: woordsoort
+        countable: telbaar
+        attested: gouden boekje
+        attested_on: datum
+        status2: weergeven
+
+        header_herkomst_doel: bron en educatiegebied
+        source: bron
+        goal: educatiegebied
+
+        header_beschrijving: omschrijving
+        description: omschrijving
+        latin: wetenschappelijke naam
+
+        header_vertaling: vertalingen
+        tr_nl: nederlands
+        tr_en: engels
+        tr_es: spaans
+        tr_pap_cw: papiamentu
+        tr_pap_aw: papiamento
+
+        pictures: plaatjes
+
+        header_extra_info: extra info
+        tags: tags
+        picture_url: URL van plaatje, niet meer gebruiken!
+        youtube_url: URL van video op Youtube
+
+        header_info: info
+        created_at: ingevoerd op
+        updated_at: laatst gewijzigd
+        user: invoerder
